@@ -1,0 +1,269 @@
+/*
+ * Globals - this is where you customize the display
+ * You may prefer to create your own custom.css file instead
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #00bcd6;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.navbar-header .white {
+    background-color: #ffffff;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.navbar-header .navigation__text {
+    color:#00bcd6;
+    text-decoration-color:#00bcd6;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 42rem;
+  }
+}
+body
+{
+    background-color:#00bcd6;
+}
+.masthead {
+    width: 1440px;
+    height: 70px;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid rgb(220,220,220);
+}
+
+#loginform
+{
+    width:360px;
+    height:280px;
+    margin-top:100px;
+    background-color:#ffffff;
+    border-radius:3px;
+    box-shadow:0px 0px 10px 0px #424242;
+    padding:10px;
+    box-sizing:border-box;
+    font-family:helvetica;
+    visibility:hidden;
+    display:none;
+}
+#loginform #close_login
+{    
+    width:15px;
+    height:15px;
+}
+#loginform p
+{
+    margin-top:40px;
+    font-size:22px;
+    color:#E6E6E6;
+}
+#loginform #icon_login
+{    
+    width:15px;
+    height:15px;
+}
+#loginform #login
+{
+    width:250px;
+    height:40px;
+    border:2px solid white;
+    border-bottom: 1px solid black;
+    padding:5px;
+}
+#loginform #icon_password
+{    
+    width:15px;
+    height:15px;
+}
+#loginform #password
+{
+    margin-top:5px;
+    width:250px;
+    height:40px;
+    border:2px solid white;
+    border-bottom: 1px solid black;
+    padding:5px;
+}
+#loginform #dologin
+{
+    margin-left:-5px;
+    margin-top:10px;
+    width:250px;
+    height:40px;
+    border:none;
+    border-radius:3px;
+    text-transform: uppercase;
+    color:#ffffff;
+    background-color:rgb(255,64,129);
+    
+    font-size:20px;
+}
+
+.icon_pass, .icon_user{
+    background: url(sprites.png) no-repeat;
+}
+
+.icon_pass{
+    background-position: -14px -11px ;
+    width: 20px;
+    height: 27px;
+}
+
+.icon_user{
+    background-position: -64px -13px ;
+    width: 20px;
+    height: 20px;
+}
+
